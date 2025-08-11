@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>주문서</h1>
+
+    <form action="orders.jsp">
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+            <li>
+                <label id="prod">주문상품</label>
+                <input type="text" id="prod1" value="상품용3KG" readinly>
+            </li>
+            <li>
+                <label id="user-name">이름</label>
+                <input type="text" id="user-name1" autofocus required>
+            </li>
+            <li>
+                <label id="addr">배송주소</label>
+                <input type="text" id="addr1" readinly>
+            </li>
+            <li>
+                <label id="mail">이메일</label>
+                <input type="email" id="mail1">
+            </li>
+            <li>
+                <label id="phone">연락처</label>
+                <input type="tel" id="phone1" placeholder="하이픈 빼고 입력해주세요(01012345678)" required>
+            </li>
+            <li>
+                <label id="d-day">배송지정</label>
+                <input type="date" id="d-day1"> <small>(주문일로부터 최소 3일 이후)</small>
+            </li>
+        </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+    
+</body>
+</html>
